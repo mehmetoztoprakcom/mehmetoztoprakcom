@@ -358,3 +358,125 @@ footer .btn:hover {
         gap: 10px;
     }
 }
+/* =========================================
+   11. YENİ BÖLÜMLER: HİZMETLER & SKILLS
+   ========================================= */
+
+/* --- Hizmet Kartları (Services) --- */
+.service-card {
+    background: linear-gradient(145deg, #121212, #1a1a1a);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255,255,255,0.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    background: linear-gradient(145deg, #1a1a1a, #222);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .icon-box {
+    background: var(--accent); /* Hover olunca kırmızı yanar */
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Yetenek Rozetleri (Skills) --- */
+.skill-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px; /* Pill shape */
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-badge:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: var(--text-primary);
+    transform: scale(1.05);
+}
+
+.skill-badge.border-light {
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Küçük vurgu renkleri */
+.text-accent {
+    color: var(--accent) !important;
+}
+/* =========================================
+   12. YENİ BÖLÜMLER: WORKFLOW & TESTIMONIALS
+   ========================================= */
+
+/* --- Çalışma Süreci (Workflow) --- */
+.process-step {
+    padding: 20px;
+    position: relative;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover .step-number {
+    color: var(--accent);
+    -webkit-text-stroke: 0px;
+    transform: scale(1.1);
+}
+
+/* --- Müşteri Yorumları (Testimonials) --- */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-style: italic;
+}
